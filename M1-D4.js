@@ -78,13 +78,20 @@ let check3and7 = function(x){
         return false;
     }
 }
-console.log(check3and7(3))
+console.log(check3and7(-3))
 
 /* EXERCISE 7
 Write a function "reverseString" to reverse programmatically a given string (es.: Strive => evirtS).
 */
 
-/* WRITE YOUR CODE HERE */
+let reverseString = function(S){
+    let splitString = S.split("");
+    let reverseArray = splitString.reverse();
+    let joinArray = reverseArray.join("");
+    return joinArray;
+    
+}
+console.log(reverseString("STRIVE"))
 
 /* EXERCISE 8
 Write a function "upperFirst" to capitalize the first letter of each word of a given string passed as parameter
