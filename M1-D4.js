@@ -97,14 +97,21 @@ console.log(reverseString("STRIVE"))
 Write a function "upperFirst" to capitalize the first letter of each word of a given string passed as parameter
 */
 
-/* WRITE YOUR CODE HERE */
+let upperFirst= function(S=""){
+    return S.charAt(0).toUpperCase() + S.slice(1);
+}  
+
+
+console.log(upperFirst("strive school"));
 
 /* EXERCISE 9
 Write a function "cutString" to create a new string without the first and last character of a given string.
 */
 
-/* WRITE YOUR CODE HERE */
-
+let cutString = function(S=""){
+   return  S.substring(1,S.length-1);
+}
+console.log(cutString("ENIS"));
 /* EXERCISE 10
 Write a function "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10
 */
