@@ -57,7 +57,9 @@ console.log(boundary(11))
 Write a function "strivify" which accepts a string S. Add to S "Strive" in front of a given string, if the given string begins with "Strive" then return the original string.
 */
 
-/* WRITE YOUR CODE HERE */
+let strivify = function(S){
+    
+}
 
 /* EXERCISE 6
 Write a function "check3and7" which accepts a positive number and check if it is a multiple of 3 or a multiple of 7.
