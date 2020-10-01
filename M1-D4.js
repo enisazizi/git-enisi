@@ -117,9 +117,9 @@ Write a function "giveMeRandom" which accepts a number n and returns an array co
 */
 let array1=[];
 let giveMeRandom = function(n){
-    for(i=0; i==n ; i++){
+    for(i=0; i<n ; i++){
 
-    array1[i] = (int) (Math.random() * 10);
+    array1.push(Math.floor(Math.random() * 10));
 
     }
     return array1;
