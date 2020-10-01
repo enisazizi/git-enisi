@@ -126,7 +126,7 @@ let giveMeRandom = function(n){
   
 
 }
-console.log(giveMeRandom(5));
+console.log(giveMeRandom(10));
 /* WHEN YOU ARE FINISHED
 Commit and push the code to your personal GitHub repository and share the link to your commit with your tutor.
 */
