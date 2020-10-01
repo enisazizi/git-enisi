@@ -108,7 +108,7 @@ console.log(upperFirst("strive school"));
 Write a function "cutString" to create a new string without the first and last character of a given string.
 */
 
-let cutString = function(S=""){
+let cutString = function(S){
    return  S.substring(1,S.length-1);
 }
 console.log(cutString("ENIS"));
@@ -116,7 +116,11 @@ console.log(cutString("ENIS"));
 Write a function "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10
 */
 
-/* WRITE YOUR CODE HERE */
+let giveMeRandom = function(n){
+    
+  
+}
+console.log(giveMeRandom(5))
 
 /* WHEN YOU ARE FINISHED
 Commit and push the code to your personal GitHub repository and share the link to your commit with your tutor.
