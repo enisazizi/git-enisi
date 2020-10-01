@@ -22,7 +22,7 @@ let crazySum= function(x,y){
        return x+y;
     }
 }
-console.log(crazySum(2,2))
+console.log(crazySum(3,2))
 /* EXERCISE 3
 Write a function "crazyDiff" that computes the 
 absolute difference between a given number and 19. 
@@ -30,6 +30,15 @@ Returns triple their absolute difference if
 the specified
 number is greater than 19.
 */
+ let crazyDiff = function(x){
+    if(x>19){
+        return 3*Math.abs(x-19);
+    }else{
+        return Math.abs(x-19);
+    }
+}
+    console.log(crazyDiff(-30))
+
  
 /* EXERCISE 4
 Write a function "boundary" which accept an integer N and returns true if N is within 20 and 100 (included) or equal to 400.
