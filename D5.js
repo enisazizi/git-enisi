@@ -488,16 +488,7 @@ console.log(DeleteX(3));
   ***
 */
 
-    let HalfTree=(x)=>{
-     for (let i=0;i<x;i++){
-      for(let j=0; j<x ; j++){
-      if(j<=i){
-      console.log("*");
-      }
-      console.log(/n)
-      }
-     }
-    console.log(HalfTree(3))
+    
 /* Ex.22 
   Create a function Tree that receives the height and creates an "*" tree with that height
   Example: 
@@ -506,3 +497,18 @@ console.log(DeleteX(3));
    *** 
   *****
 */
+const searchAndDivide = (S) => {
+  let matchmovie = [];
+  let nonMatch = [];
+  for (let i = 0; i < movies.length; i++) {
+    if (movies[i].Title.match(S)) {
+      matchmovie.push(movies[i]);
+    } else {
+      nonMatch.push(movies[i]);
+    }
+  }
+
+  return { matchmovie, nonMatch };
+};
+
+console.log(searchAndDivide("Av"));
