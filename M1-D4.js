@@ -134,3 +134,11 @@ console.log(giveMeRandom(10));
 /* WHEN YOU ARE FINISHED
 Commit and push the code to your personal GitHub repository and share the link to your commit with your tutor.
 */
+
+
+
+ function sum(x, y, callback){
+    let result= x+y;
+    callback(result);
+ }
+ console.log(sum(callback))

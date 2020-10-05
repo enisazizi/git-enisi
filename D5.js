@@ -512,3 +512,6 @@ const searchAndDivide = (S) => {
 };
 
 console.log(searchAndDivide("Av"));
+function changeAddress(){
+  let fake=document.querySelector('#chAdd').href="enis@fake.com";
+}
