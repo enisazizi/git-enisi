@@ -142,3 +142,6 @@ Commit and push the code to your personal GitHub repository and share the link t
     callback(result);
  }
  console.log(sum(callback))
+
+ https://discordapp.com/channels/730327743874596915/761605584327802890/762645664273793024
+https://calendly.com/riccardo-strive *
