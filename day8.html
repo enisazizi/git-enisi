@@ -68,7 +68,7 @@ input[type="button"] {
 
     <hr />
 
-    <input type="color" placeholder="Color" id="colorPicker" />
+    <input type="color" onchange="changeTaskBackgroundColor()" placeholder="Color" id="colorPicker" />
     <input
       type="button"
       value="Change task background"
@@ -142,7 +142,10 @@ input[type="button"] {
 
             function changeTaskBackgroundColor(){
                 let colorbe=document.querySelector("#colorPicker")
-                colornew.innerHTML=colorbe.value;
+                let liEl=document.querySelectorAll("#myTaskList li")
+                for(i=0;i<liEl.length;i++){
+                  liEl[i].style.backgroundColor=colorbe.value;
+                }
                 
             }
 
