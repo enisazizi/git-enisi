@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <!--
+        BINGO CHALLENGE!!!
+        Create programmatically (with JS) a BINGO board with 76 cells, from 1 to 76.
+        Create a button to randomize a number from 1 to 76. The same number should be highlighted on the bingo board
+
+        EXTRA: 
+        - Take ALWAYS a new number (avoid randoming 10 3 times for example)
+        - Create a USER BOARD with random 24 numbers that highlights as the main board does
+        - Let the user choose HOW MANY user boards he's willing to play with and create them.
+    -->
+    <head>
+        <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bingo</title> 
+    <style>
+        body{
+            background-color: #f8f8f8;
+        font-family: "Poppins", sans-serif;
+        color: #1b1b1b;
+        max-width: 768px;
+        margin: 0 auto;
+        font-size: 18px;
+        }
+        .numClass{
+            display: inline-block;
+            width: 5.2%;
+            text-align: center;
+            
+            
+        }
+        h1{
+            font-size: 64px;
+            margin-bottom: 0;
+            
+        }
+        h3{
+            font-size: 30px;
+            margin-bottom: 1rem;
+                        
+        }
+        #bingo {
+        background-color: #1b1b1b;
+        color: white;
+        width: 100%;
+        margin-bottom: 20px;
+        border: 6px solid #1b1b1b;
+        border-radius: 8px;
+      }
+    </style>
+    </head>
+    <body>
+        <h1>BINGOOOO</h1>
+        <div id="bingo">     
+        </div>
+        <div>
+            <input type="button" value="Randomize a number" onclick="randomize()" >
+        </div>
+        <div id="numra">
+            
+        </div>
+
+        <script>
+            
+        window.onload = function () {
+            let numArray = [];
+            let bingo = document.querySelector("#bingo");
+            for (let i = 1; i < 77; i++) {
+              numArray[i] = [];
+          
+              const bingochild = document.createElement("div");
+                  bingochild.className = "numClass";
+              const num = document.createElement("h3");
+              const addnum = i;
+              num.innerText = addnum;
+              bingochild.appendChild(num);
+              bingo.appendChild(bingochild);
+              
+            }
+          };
+          function randomize(){
+                let inputram=document.querySelector("#numra");
+                let num=document.createElement("h3");
+                let index=Math.floor(Math.random()*76)+1; 
+                num.innerText=index;
+                inputram.appendChild(num);
+                
+                    
+          }
+
+            let selected = document.querySelector(".selected");
+             if (selected) {
+              selected.classList.remove("selected");
+            
+            // now we don't have for sure any .selected class on any element
+            event.currentTarget.classList.add("selected");
+            console.log(numArray.length);
+                
+          }
+            
+          
+        </script>
+    </body>
+</html>
